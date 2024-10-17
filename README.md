@@ -1,5 +1,7 @@
 # UUID
 
+<img src="https://github.com/user-attachments/assets/b59b9ac6-5f62-4bde-9ade-36d7977a5e25" height="400" width=auto />
+
 the [CLI](https://github.com/miyako/go-uuid/blob/master/main.go) uses [gofrs/uuid](https://github.com/miyako/go-uuid).
 
 ## Go Build
