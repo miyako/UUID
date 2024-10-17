@@ -1,6 +1,6 @@
 # UUID
 
-use [gofrs/uuid](https://github.com/miyako/go-uuid) as reference implementation.
+the [CLI](https://github.com/miyako/go-uuid/blob/master/main.go) uses [gofrs/uuid](https://github.com/miyako/go-uuid).
 
 ## Go Build
 
