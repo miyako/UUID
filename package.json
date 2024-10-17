@@ -1,10 +1,12 @@
 {
-  "name": "BB_Semaphore",
-  "description": "BB_Semaphore",
-  "author": "Tony Ringsmuth <tonyring@bbsp.com>",
+  "name": "UUID",
+  "description": "UUID",
+  "author": ["Maxim Bublis <b@codemonkey.ru>",
+    "Keisuke Miyako <keisuke.miyako@4D.com>"
+  ],
   "license": "MIT",
-  "repository": "https://github.com/miyako/bb_semaphore",
-  "version": "0.0.4",
+  "repository": "https://github.com/miyako/UUID",
+  "version": "1.0.1",
   "tool": {
     "platform": "macos",
     "branch": "20%20Rx",
