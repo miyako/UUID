@@ -1,8 +1,8 @@
 Class extends _CLI
 
-Class constructor($controller : 4D:C1709.Class)
+Class constructor()
 	
-	Super:C1705("uuid"; $controller)
+	Super:C1705("uuid"; cs:C1710._UUID_Controller)
 	
 Function terminate()
 	
