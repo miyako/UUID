@@ -11,9 +11,9 @@
  ```json
 {
 	"dependencies": {
-		"bb-semaphore": {
+		"UUID": {
 			"github": "miyako/UUID",
-			"version": "^0.0.1"
+			"version": "^1.0.1"
 		}
 	}
 }
