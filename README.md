@@ -1,4 +1,4 @@
-# UUIDv7
+# UUID
 
 use [gofrs/uuid](https://github.com/miyako/uuid) as reference implementation.
 
