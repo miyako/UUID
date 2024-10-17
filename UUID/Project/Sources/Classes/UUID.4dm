@@ -4,43 +4,62 @@ Class constructor($controller : 4D:C1709.Class)
 	
 	Super:C1705("uuid"; $controller)
 	
-	If (OB Instance of:C1731($ini; 4D:C1709.File))
-		If ($ini.exists)
-			This:C1470.ini:=This:C1470.expand($ini).path
-		End if 
-	End if 
-	
 Function terminate()
 	
 	This:C1470.controller.terminate()
 	
-Function run($php : Variant)->$this : cs:C1710.UUID
+Function trim($in : Text) : Text
 	
-	$this:=This:C1470
-	
-	Case of 
-		: (Value type:C1509($php)=Is text:K8:3)
-			
-			$command:=This:C1470.escape(This:C1470.executablePath)
-			$command+=" -r"
-			$command+=" "+This:C1470.escape($php)
-			
-		: (Value type:C1509($php)=Is object:K8:27) && (OB Instance of:C1731($php; 4D:C1709.File)) && ($php.exists)
-			
-			$command:=This:C1470.escape(This:C1470.executablePath)
-			$command+=" -f"
-			$command+=" "+This:C1470.escape(This:C1470.expand($php).path)
-			
-		Else 
-			return 
-	End case 
-	
-	If (This:C1470.ini#Null:C1517)
-		$command+=" -c "+This:C1470.escape(This:C1470.ini)
-	Else 
-		$command+=" -n "
+	ARRAY LONGINT:C221($pos; 0)
+	ARRAY LONGINT:C221($len; 0)
+	If (Match regex:C1019("^(\\S+)$"; $in; 1; $pos; $len))
+		return Substring:C12($in; $pos{1}; $len{1})
 	End if 
+	
+	return $in
+	
+Function v7() : Text
+	
+	return This:C1470._v7641(7)
+	
+Function v6() : Text
+	
+	return This:C1470._v7641(6)
+	
+Function v4() : Text
+	
+	return This:C1470._v7641(4)
+	
+Function v1() : Text
+	
+	return This:C1470._v7641(1)
+	
+Function v5($ns : Text; $name : Text) : Text
+	
+	return This:C1470._v53(5; $ns; $name)
+	
+Function v3($ns : Text; $name : Text) : Text
+	
+	return This:C1470._v53(3; $ns; $name)
+	
+Function _v7641($v : Integer) : Text
+	
+	$command:=This:C1470.escape(This:C1470.executablePath)
+	$command+=" -mode "+String:C10($v)
 	
 	This:C1470.controller.execute($command)
 	This:C1470.controller.worker.wait()
 	
+	return This:C1470.trim(This:C1470.data)
+	
+Function _v53($v : Integer; $ns : Text; $name : Text) : Text
+	
+	$command:=This:C1470.escape(This:C1470.executablePath)
+	$command+=" -mode "+String:C10($v)
+	$command+=" -ns "+This:C1470.quote($ns)
+	$command+=" -name "+This:C1470.quote($name)
+	
+	This:C1470.controller.execute($command)
+	This:C1470.controller.worker.wait()
+	
+	return This:C1470.trim(This:C1470.data)
