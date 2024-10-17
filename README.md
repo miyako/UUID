@@ -13,7 +13,7 @@
 	"dependencies": {
 		"bb-semaphore": {
 			"github": "miyako/UUID",
-			"version": "^0.0.1"
+			"version": "^1.0.1"
 		}
 	}
 }
