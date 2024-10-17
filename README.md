@@ -1,6 +1,23 @@
+![version](https://img.shields.io/badge/version-20%2B-E23089)
+![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-64&color=blue)
+[![license](https://img.shields.io/github/license/miyako/UUID)](LICENSE)
+
 # UUID
 
 <img src="https://github.com/user-attachments/assets/b59b9ac6-5f62-4bde-9ade-36d7977a5e25" height="400" width=auto />
+
+## dependencies.json
+
+ ```json
+{
+	"dependencies": {
+		"bb-semaphore": {
+			"github": "miyako/UUID",
+			"version": "^0.0.1"
+		}
+	}
+}
+```
 
 the [CLI](https://github.com/miyako/go-uuid/blob/master/main.go) uses [gofrs/uuid](https://github.com/miyako/go-uuid).
 
