@@ -1,6 +1,6 @@
 # UUIDv7
 
-use [gofrs/uuid](https://github.com/gofrs/uuid) as reference implementation.
+use [gofrs/uuid](https://github.com/miyako/uuid) as reference implementation.
 
 ## Go
 
