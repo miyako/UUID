@@ -1,6 +1,6 @@
 # UUID
 
-use [gofrs/uuid](https://github.com/miyako/uuid) as reference implementation.
+use [gofrs/uuid](https://github.com/miyako/go-uuid) as reference implementation.
 
 ## Go Build
 
