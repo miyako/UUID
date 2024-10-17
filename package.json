@@ -1,12 +1,13 @@
 {
   "name": "UUID",
   "description": "UUID",
-  "author": ["Maxim Bublis <b@codemonkey.ru>",
+  "author": [
+    "Maxim Bublis <b@codemonkey.ru>",
     "Keisuke Miyako <keisuke.miyako@4D.com>"
   ],
   "license": "MIT",
   "repository": "https://github.com/miyako/UUID",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "tool": {
     "platform": "macos",
     "branch": "20%20Rx",
