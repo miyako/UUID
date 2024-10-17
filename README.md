@@ -13,7 +13,7 @@
 	"dependencies": {
 		"UUID": {
 			"github": "miyako/UUID",
-			"version": "^1.0.1"
+			"version": "^1.0.4"
 		}
 	}
 }
