@@ -4,7 +4,7 @@
 
 # UUID
 
-<img src="https://github.com/user-attachments/assets/b59b9ac6-5f62-4bde-9ade-36d7977a5e25" height="400" width=auto />
+<img src="https://github.com/user-attachments/assets/77768fae-bf3f-4a50-bf1d-4007ce00865c" height="400" width=auto />
 
 ## dependencies.json
 
