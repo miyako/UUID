@@ -5,7 +5,19 @@
 
 # UUID
 
-<img src="https://github.com/user-attachments/assets/77768fae-bf3f-4a50-bf1d-4007ce00865c" height="400" width=auto />
+```4d
+var $UUID : cs.UUID.UUID
+$UUID:=cs.UUID.UUID.new()
+
+$UUIDv7:=$UUID.v7()
+$UUIDv6:=$UUID.v6()
+$UUIDv5:=$UUID.v5("dns"; "www.4d.com")  //ns:dns,url,oid,x500
+$UUIDv4:=$UUID.v4()
+$UUIDv3:=$UUID.v3("dns"; "www.4d.com")  //ns:dns,url,oid,x500
+$UUIDv1:=$UUID.v1()
+```
+
+<img src="https://github.com/user-attachments/assets/fadc2741-db78-4d9e-bbed-b031b0ccfcc4" height="300" width=auto />
 
 ## dependencies.json
 
