@@ -4,11 +4,11 @@ Class constructor()
 	
 	Super:C1705("uuid"; cs:C1710._UUID_Controller)
 	
-Function terminate()
+Function _terminate()
 	
 	This:C1470.controller.terminate()
 	
-Function trim($in : Text) : Text
+Function _trim($in : Text) : Text
 	
 	ARRAY LONGINT:C221($pos; 0)
 	ARRAY LONGINT:C221($len; 0)
@@ -50,7 +50,7 @@ Function _v7641($v : Integer) : Text
 	This:C1470.controller.execute($command)
 	This:C1470.controller.worker.wait()
 	
-	return This:C1470.trim(This:C1470.data)
+	return This:C1470._trim(This:C1470.data)
 	
 Function _v53($v : Integer; $ns : Text; $name : Text) : Text
 	
@@ -62,4 +62,4 @@ Function _v53($v : Integer; $ns : Text; $name : Text) : Text
 	This:C1470.controller.execute($command)
 	This:C1470.controller.worker.wait()
 	
-	return This:C1470.trim(This:C1470.data)
+	return This:C1470._trim(This:C1470.data)
