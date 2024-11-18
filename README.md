@@ -5,6 +5,19 @@
 
 # UUID
 
+## dependencies.json
+
+ ```json
+{
+	"dependencies": {
+		"UUID": {
+			"github": "miyako/UUID",
+			"version": "*"
+		}
+	}
+}
+```
+
 ```4d
 var $UUID : cs.UUID.UUID
 $UUID:=cs.UUID.UUID.new()
@@ -18,19 +31,6 @@ $UUIDv1:=$UUID.v1()
 ```
 
 <img src="https://github.com/user-attachments/assets/fadc2741-db78-4d9e-bbed-b031b0ccfcc4" height="300" width=auto />
-
-## dependencies.json
-
- ```json
-{
-	"dependencies": {
-		"UUID": {
-			"github": "miyako/UUID",
-			"version": "^1.0.5"
-		}
-	}
-}
-```
 
 the [CLI](https://github.com/miyako/go-uuid/blob/master/main.go) uses [gofrs/uuid](https://github.com/miyako/go-uuid).
 
