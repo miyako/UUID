@@ -4,9 +4,16 @@ Class constructor()
 	
 	Super:C1705("uuid"; cs:C1710._UUID_Controller)
 	
-Function _terminate()
+	This:C1470._EOL:="\n"  //also on windows
+	This:C1470.controller.timeout:=5
+	
+Function terminate()
 	
 	This:C1470.controller.terminate()
+	
+Function get worker() : 4D:C1709.SystemWorker
+	
+	return This:C1470.controller.worker
 	
 Function _trim($in : Text) : Text
 	
@@ -48,7 +55,7 @@ Function _v7641($v : Integer) : Text
 	$command+=" -mode "+String:C10($v)
 	
 	This:C1470.controller.execute($command)
-	This:C1470.controller.worker.wait()
+	This:C1470.worker.wait()
 	
 	return This:C1470._trim(This:C1470.data)
 	
@@ -60,6 +67,6 @@ Function _v53($v : Integer; $ns : Text; $name : Text) : Text
 	$command+=" -name "+This:C1470.quote($name)
 	
 	This:C1470.controller.execute($command)
-	This:C1470.controller.worker.wait()
+	This:C1470.worker.wait()
 	
 	return This:C1470._trim(This:C1470.data)
