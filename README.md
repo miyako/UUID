@@ -12,7 +12,7 @@
 	"dependencies": {
 		"UUID": {
 			"github": "miyako/UUID",
-			"version": "*"
+			"version": "latest"
 		}
 	}
 }
